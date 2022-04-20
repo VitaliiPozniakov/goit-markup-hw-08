@@ -32,12 +32,12 @@
       margin-bottom: 0px;
     }
   }
-
+  
   @media screen and (min-width: $desktop) {
-    &: not(: last-child) {
+    &:not(: last-child) {
       margin-right: 30px;
     }
-  }
+
 }
 
 .team-card__meta {
