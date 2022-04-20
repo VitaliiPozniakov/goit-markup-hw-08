@@ -1,0 +1,30 @@
+.social-networking {
+  @extend %list;
+  @extend %centeredFlex;
+  width: 206px;
+}
+
+.social-networking__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-networking__link {
+  @extend %centeredFlex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $primary-icon-color;
+  transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primari-white-color;
+  }
+}
+
+.social-networking__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

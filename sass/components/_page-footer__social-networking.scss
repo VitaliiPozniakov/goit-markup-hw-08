@@ -1,0 +1,10 @@
+.page-footer__social-networking .social-networking__link {
+  background-color: $background-icon-footer-color;
+  color: $primari-white-color;
+  transition: background-color 250ms $timing-function;
+}
+
+.page-footer__social-networking .social-networking__link:hover,
+.page-footer__social-networking .social-networking__link:focus {
+  background-color: $accent-color;
+}

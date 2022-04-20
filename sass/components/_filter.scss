@@ -1,0 +1,31 @@
+.filter {
+  @extend %list;
+  @extend %centeredFlex;
+  margin-bottom: 50px;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  padding: 6px 22px;
+  color: $title-text-color;
+  background-color: $secondary-background-color-light;
+  cursor: pointer;
+  transition: background-color 250ms $timing-function, color 250ms $timing-function,
+    box-shadow 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $primari-white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+      0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+}

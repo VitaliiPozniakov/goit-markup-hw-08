@@ -1,0 +1,46 @@
+.checkbox {
+  @extend %centeredFlex;
+  margin-bottom: 30px;
+}
+
+.checkbox__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox__icon {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border-radius: 2px;
+  border: 2px solid $title-text-color;
+  transition: background-color, background-image, background-size, background-repeat,
+    background-origin, border-color 250ms $timing-function;
+
+  .checkbox__input:checked + & {
+    background-color: $accent-color;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 10'%3E%3Cpath d='m1.957 4.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    border-color: transparent;
+  }
+}
+
+.checkbox__text {
+  line-height: 1.71;
+}
+
+.checkbox__link {
+  color: $accent-color;
+}

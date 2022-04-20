@@ -1,0 +1,40 @@
+.section--without-padding-top {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.activities-card {
+  @extend %list;
+  display: flex;
+}
+
+.activities-card__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.activities-card__thumb {
+  position: relative;
+}
+
+.activities-card__link {
+  text-decoration: none;
+}
+
+.activities-card__label {
+  position: absolute;
+  bottom: 0;
+  @extend %centeredFlex;
+  width: 370px;
+  height: 70px;
+  background-color: $background-description-index;
+}
+
+.activities-card__text {
+  font-weight: 700;
+  line-height: 1.14;
+  color: $primari-white-color;
+  text-transform: uppercase;
+}

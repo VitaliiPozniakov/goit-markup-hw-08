@@ -1,0 +1,27 @@
+.adres-group {
+  @extend %list;
+  margin-top: 20px;
+}
+
+.adres-group__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adres-group__link {
+  color: $secondary-white-color;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+  transition: color 250ms $timing-function;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.adres-group__link--white {
+  color: $primari-white-color;
+  line-height: 1.71;
+  transition: color 250ms $timing-function;
+}

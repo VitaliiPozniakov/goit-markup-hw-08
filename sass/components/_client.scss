@@ -1,0 +1,25 @@
+.client-card {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-card__link {
+  @extend %centeredFlex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $border-client-color;
+  border-radius: 4px;
+  color: $primary-icon-color;
+  transition: border-color 250ms $timing-function, color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.client-card__icon {
+  fill: currentColor;
+}
