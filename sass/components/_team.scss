@@ -7,10 +7,9 @@
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: $desktop) {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   flex-wrap: nowrap;
+  // }
 }
 
 .team-card__item {
@@ -32,12 +31,11 @@
       margin-bottom: 0px;
     }
   }
-  
-  @media screen and (min-width: $desktop) {
-    &:not(: last-child) {
-      margin-right: 30px;
-    }
 
+  // @media screen and (min-width: $desktop) {
+  //   margin-bottom: 0px;
+  //   margin-right: 30px;
+  // }
 }
 
 .team-card__meta {

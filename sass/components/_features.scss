@@ -1,15 +1,20 @@
 .feature-card {
-  @media screen and (min-width: $tablet) {
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
   }
 }
 
 .feature-card__item {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     flex-basis: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
@@ -21,6 +26,12 @@
       margin-bottom: 0px;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .feature-card__thumb {
@@ -30,6 +41,11 @@
   margin-bottom: 30px;
   background-color: $secondary-background-color-light;
   border-radius: 4px;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 354px;
+    height: 120px;
+  }
 }
 
 .feature-card__title {
