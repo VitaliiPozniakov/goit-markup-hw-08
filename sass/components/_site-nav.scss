@@ -1,7 +1,11 @@
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
   @extend %list;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav__item:not(:last-child) {
