@@ -1,14 +1,20 @@
 .footer-form {
+  // margin-left: auto;
+  width: 450px;
   margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
 }
 
 .footer-form__content {
-  display: flex;
+  // display: flex;
 }
 
 .footer-form__input {
+  margin-bottom: 20px;
   margin-right: 12px;
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -39,6 +45,8 @@
   padding: 10px 29px;
   @extend %centeredFlex;
   width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-form__icon {

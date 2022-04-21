@@ -1,17 +1,60 @@
 .client-card {
   @extend %list;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.client-card__item {
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .client-card__link {
   @extend %centeredFlex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid $border-client-color;
   border-radius: 4px;
   color: $primary-icon-color;
   transition: border-color 250ms $timing-function, color 250ms $timing-function;
+
+  @media screen and (min-width: $tablet) {
+    & {
+      width: 226px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      width: 170px;
+    }
+  }
 
   &:hover,
   &:focus {

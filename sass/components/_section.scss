@@ -17,11 +17,15 @@
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: $title-text-color;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .section .title {

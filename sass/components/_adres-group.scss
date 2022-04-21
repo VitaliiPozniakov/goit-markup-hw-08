@@ -3,8 +3,12 @@
   margin-top: 20px;
 }
 
+.adres-group__list {
+  @extend %list;
+}
+
 .adres-group__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .adres-group__link {

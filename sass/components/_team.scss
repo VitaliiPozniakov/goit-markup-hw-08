@@ -1,15 +1,15 @@
 .team-card {
-  @media screen and (min-width: $tablet) {
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
+  @extend %list;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 
-  // @media screen and (min-width: $desktop) {
-  //   flex-wrap: nowrap;
-  // }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .team-card__item {
@@ -19,31 +19,30 @@
   border-bottom-right-radius: 4px;
   background-color: $primari-white-color;
 
-  @media screen and (min-width: $tablet) {
-    flex-basis: calc((100% - 30px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
-
-    &:nth-child(2n) {
-      margin-right: 0px;
-    }
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
-    }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 
-  // @media screen and (min-width: $desktop) {
-  //   margin-bottom: 0px;
-  //   margin-right: 30px;
-  // }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .team-card__meta {
-  padding: 30px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .team-card__name {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-card__position {
