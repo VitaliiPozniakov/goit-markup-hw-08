@@ -1,0 +1,6 @@
+.footer-navigation {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+}

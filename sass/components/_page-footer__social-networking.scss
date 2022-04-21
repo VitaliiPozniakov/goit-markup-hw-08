@@ -4,6 +4,10 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .page-footer__social-networking .social-networking__link {

@@ -4,13 +4,13 @@
   background-color: $secondary-background-color-dark;
 }
 
-// .page-footer .container {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   // align-items: baseline;
-// }
+.page-footer .container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
 
 .page-footer__text {
   display: block;

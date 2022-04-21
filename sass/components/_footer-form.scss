@@ -1,20 +1,28 @@
 .footer-form {
-  // margin-left: auto;
-  width: 450px;
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (max-width: $desktop) {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
-  text-align: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
 }
 
 .footer-form__content {
-  // display: flex;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .footer-form__input {
   margin-bottom: 20px;
   margin-right: 12px;
   width: 100%;
+  height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -23,6 +31,11 @@
   border-radius: 4px;
   background-color: $secondary-background-color-dark;
   color: $footer-placeholder-color;
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    height: 50px;
+  }
 
   &::placeholder {
     font-size: 16px;
@@ -44,9 +57,13 @@
 .footer-form .button {
   padding: 10px 29px;
   @extend %centeredFlex;
-  width: 200px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 200px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .footer-form__icon {
