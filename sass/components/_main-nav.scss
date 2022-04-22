@@ -1,3 +1,25 @@
 .main-nav {
   @include centeredFlex(center);
 }
+
+// .main-nav__common-icon {
+//   fill: red;
+//   stroke: aqua;
+// }
+
+.main-nav__icon-close {
+  display: none;
+
+  .is-open & {
+    display: block;
+  }
+}
+
+.is-open .main-nav__icon-menu {
+  display: none;
+}
+
+.main-nav__btn {
+  background-color: transparent;
+  border: none;
+}

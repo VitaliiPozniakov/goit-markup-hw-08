@@ -9,3 +9,21 @@
   @extend %centeredFlex;
   justify-content: space-between;
 }
+
+.menu-container {
+  // display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 25px;
+  text-align: center;
+  background-color: aqua;
+
+  &.is-open {
+    display: block;
+  }
+}

@@ -1,6 +1,10 @@
 .contacts-nav {
   @extend %list;
 
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     display: flex;
     flex-direction: column;

@@ -3,6 +3,10 @@
   margin-left: 88px;
   @extend %list;
 
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     margin-left: 93px;
   }
