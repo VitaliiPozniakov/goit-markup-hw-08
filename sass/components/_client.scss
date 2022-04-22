@@ -37,24 +37,24 @@
 
 .client-card__link {
   @extend %centeredFlex;
-  width: 210px;
+  // width: 210px;
   height: 92px;
   border: 1px solid $border-client-color;
   border-radius: 4px;
   color: $primary-icon-color;
   transition: border-color 250ms $timing-function, color 250ms $timing-function;
 
-  @media screen and (min-width: $tablet) {
-    & {
-      width: 226px;
-    }
-  }
+  // @media screen and (min-width: $tablet) {
+  //   & {
+  //     width: 226px;
+  //   }
+  // }
 
-  @media screen and (min-width: $desktop) {
-    & {
-      width: 170px;
-    }
-  }
+  // @media screen and (min-width: $desktop) {
+  //   & {
+  //     width: 170px;
+  //   }
+  // }
 
   &:hover,
   &:focus {

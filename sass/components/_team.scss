@@ -19,6 +19,10 @@
   border-bottom-right-radius: 4px;
   background-color: $primari-white-color;
 
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
@@ -29,6 +33,12 @@
       margin-right: 30px;
     }
   }
+}
+
+.team-card__img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 
 .team-card__meta {
