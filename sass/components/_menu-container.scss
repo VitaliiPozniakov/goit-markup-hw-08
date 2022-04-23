@@ -1,8 +1,4 @@
 .menu-container {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-  padding-right: 25px;
   //   text-align: center;
 
   &.is-open {
@@ -12,6 +8,10 @@
   background-color: $primari-white-color;
 
   @media screen and (max-width: 767px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 25px;
     // display: none;
 
     position: absolute;

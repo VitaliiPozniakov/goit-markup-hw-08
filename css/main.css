@@ -157,10 +157,6 @@ img {
 }
 
 .menu-container {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-  padding-right: 25px;
   background-color: #ffffff;
 }
 
@@ -170,6 +166,10 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 25px;
     position: absolute;
     top: 100%;
     left: 0;
