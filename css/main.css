@@ -161,7 +161,7 @@ img {
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 25px;
-  background-color: aqua;
+  background-color: #ffffff;
 }
 
 .menu-container.is-open {
@@ -396,8 +396,20 @@ img {
   }
 }
 
+.social-nav__item {
+  padding-left: 5px;
+  height: 22px;
+}
+
 .social-nav__item:not(:last-child) {
-  margin-right: 20px;
+  border-right: 1px solid #21212133;
+  padding-right: 5px;
+}
+
+.social-nav__item:not(:last-child) {
+  border-right: 1px solid #21212133;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .social-nav__link {
@@ -408,17 +420,6 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-
-.social-nav__link::after {
-  position: absolute;
-  top: 0px;
-  left: calc(100% + 10px);
-  content: '';
-  display: block;
-  width: 1px;
-  height: 22px;
-  background-color: #21212133;
 }
 
 .section {
