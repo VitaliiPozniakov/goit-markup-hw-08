@@ -1,16 +1,16 @@
 .is-hidden .modal {
-  // transform: translate(-50%, -50%) scale(0);
+  transform: scale(0);
+
+  @media screen and (min-width: $tablet) {
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
 
 .modal {
-  position: relative;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%) scale(1);
-  padding: 40px 39px 40px 41px;
-  width: 450px;
-  height: 609px;
+  transform: scale(1);
+
+  padding: 40px;
+
   background-color: $primari-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -22,9 +22,26 @@
   //   height: 609px;
   // }
 
+  max-width: 450px;
+  width: 100%;
+  // margin-left: auto;
+  // margin-right: auto;
+
+  // @media screen and (min-width: $mobile) {
+  //   max-width: 450px;
+  //   min-height: 609px;
+  // }
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
   @media screen and (min-width: $desktop) {
-    height: 581px;
-    width: 528px;
+    min-height: 581px;
+    max-width: 528px;
   }
 }
 
