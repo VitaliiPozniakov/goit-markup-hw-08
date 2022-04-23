@@ -1,11 +1,14 @@
 .main-nav {
   // @include centeredFlex(center);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 }
 
 .main-nav__icon-close {
