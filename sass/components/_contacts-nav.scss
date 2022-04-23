@@ -14,16 +14,18 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
+    margin-left: 200px;
   }
 }
 
 .contacts-nav__item {
   fill: currentColor;
 
-  @media screen and (min-width: $desktop) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+
+    font-size: 24px;
+    line-height: 1.67;
   }
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
@@ -32,6 +34,12 @@
 
     &:not(:last-child) {
       margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }

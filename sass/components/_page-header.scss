@@ -1,29 +1,22 @@
 .page-header {
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   border-bottom: 1px solid $border-header-color;
-}
 
-.page-header__container {
-  @extend %centeredFlex;
-  justify-content: space-between;
-}
+  @media screen and (min-width: $tablet) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 
-.menu-container {
-  // display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-  padding-right: 25px;
-  text-align: center;
-  background-color: aqua;
-
-  &.is-open {
-    display: block;
+  @media screen and (min-width: $desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
+
+// .page-header__container {
+//   @extend %centeredFlex;
+//   justify-content: space-between;
+// }

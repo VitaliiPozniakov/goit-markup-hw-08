@@ -1,11 +1,12 @@
 .main-nav {
-  @include centeredFlex(center);
-}
+  // @include centeredFlex(center);
 
-// .main-nav__common-icon {
-//   fill: red;
-//   stroke: aqua;
-// }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .main-nav__icon-close {
   display: none;
@@ -22,4 +23,9 @@
 .main-nav__btn {
   background-color: transparent;
   border: none;
+  padding: 0px;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
