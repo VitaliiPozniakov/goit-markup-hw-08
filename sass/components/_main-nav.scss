@@ -11,6 +11,12 @@
   // }
 }
 
+// .main-nav__icon-close {
+//   position: absolute;
+//   top: 21px;
+//   right: 25px;
+// }
+
 .main-nav__icon-close {
   display: none;
 
@@ -31,6 +37,11 @@
 // }
 
 .main-nav__btn {
+  position: absolute;
+  top: 22px;
+  right: 23px;
+  z-index: 2;
+
   background-color: transparent;
   border: none;
   padding: 0px;
