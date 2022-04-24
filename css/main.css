@@ -446,14 +446,16 @@ img {
 .section__title {
   margin-bottom: 30px;
   color: #212121;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -691,31 +693,50 @@ img {
 }
 
 .form__comment::-webkit-input-placeholder {
-  font-size: 12px;
-  line-height: 1.67;
+  font-size: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form__comment:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.67;
+  font-size: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form__comment::-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.67;
+  font-size: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form__comment::placeholder {
-  font-size: 12px;
-  line-height: 1.67;
+  font-size: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (min-width: 1200px) {
+  .form__comment::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 1.67;
+  }
+  .form__comment:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.67;
+  }
+  .form__comment::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.67;
+  }
+  .form__comment::placeholder {
+    font-size: 12px;
+    line-height: 1.67;
+  }
 }
 
 .checkbox {
