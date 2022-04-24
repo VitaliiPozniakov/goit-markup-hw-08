@@ -148,6 +148,11 @@ img {
   background-color: transparent;
   border: none;
   padding: 0px;
+  height: 16px;
+}
+
+.main-nav__btn:hover, .main-nav__btn:focus {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 767px) {
@@ -160,10 +165,6 @@ img {
   background-color: #ffffff;
 }
 
-.menu-container.is-open {
-  display: block;
-}
-
 @media screen and (max-width: 767px) {
   .menu-container {
     padding-top: 48px;
@@ -174,6 +175,9 @@ img {
     top: 100%;
     left: 0;
     width: 100%;
+  }
+  .menu-container.is-open {
+    display: block;
   }
 }
 
@@ -197,7 +201,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .site-nav {
-    margin-left: 93px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

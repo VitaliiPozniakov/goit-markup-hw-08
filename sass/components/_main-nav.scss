@@ -23,10 +23,24 @@
   display: none;
 }
 
+// .main-nav__icon-menu {
+//   &:hover,
+//   &:focus {
+//     fill: $accent-color;
+//   }
+// }
+
 .main-nav__btn {
   background-color: transparent;
   border: none;
   padding: 0px;
+
+  height: 16px;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 
   @media screen and (min-width: 767px) {
     display: none;
