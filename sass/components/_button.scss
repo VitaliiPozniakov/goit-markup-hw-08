@@ -9,4 +9,9 @@
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px $button-shadow;
+
+  @media screen and (min-width: 768px) {
+    min-width: 200px;
+    min-height: 50px;
+  }
 }
