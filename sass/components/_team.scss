@@ -34,6 +34,18 @@
 .team-card__img {
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
+  height: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .team-card__meta {
