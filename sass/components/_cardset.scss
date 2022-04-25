@@ -1,7 +1,5 @@
 .card-set {
   @extend %list;
-  // display: flex;
-  // flex-wrap: wrap;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -23,20 +21,7 @@
 
   @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 3 * 30px) / 3);
-    margin: 15px;
   }
-
-  // flex-basis: calc((100% - 60px) / 3);
-  // margin-right: 30px;
-  // margin-bottom: 30px;
-  // transition: border 250ms $timing-function, box-shadow 250ms $timing-function;
-
-  // &:nth-child(3n) {
-  //   margin-right: 0px;
-  // }
-  // &:nth-last-child(-n + 3) {
-  //   margin-bottom: 0px;
-  // }
 }
 
 .card-set__meta {
