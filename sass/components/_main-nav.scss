@@ -17,17 +17,17 @@
 //   right: 25px;
 // }
 
-.main-nav__icon-close {
-  display: none;
+// .main-nav__icon-close {
+//   display: none;
 
-  .is-open & {
-    display: block;
-  }
-}
+//   .is-open & {
+//     display: block;
+//   }
+// }
 
-.is-open .main-nav__icon-menu {
-  display: none;
-}
+// .is-open .main-nav__icon-menu {
+//   display: none;
+// }
 
 // .main-nav__icon-menu {
 //   &:hover,
@@ -37,10 +37,10 @@
 // }
 
 .main-nav__btn {
-  position: absolute;
-  top: 22px;
-  right: 23px;
-  z-index: 2;
+  // position: absolute;
+  // top: 22px;
+  // right: 23px;
+  // z-index: 2;
 
   background-color: transparent;
   border: none;

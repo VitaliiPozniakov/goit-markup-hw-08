@@ -5,19 +5,24 @@
   background-color: $primari-white-color;
 
   @media screen and (max-width: 767px) {
-    padding-top: 48px;
+    padding-top: 10px;
     padding-bottom: 48px;
     padding-left: 40px;
     padding-right: 25px;
-    display: none;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    overflow-y: scroll;
+
+    transform: translateX(101%);
+    transition: transform 250ms $timing-function;
 
     &.is-open {
-      display: block;
+      transform: translateX(0%);
     }
   }
 
@@ -27,7 +32,24 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: 93px;
+    // margin-left: 93px;
     align-items: center;
+  }
+}
+
+.menu-container__btn {
+  display: block;
+  margin-left: auto;
+
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }

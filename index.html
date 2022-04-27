@@ -26,7 +26,7 @@
           </a>
 
           <button
-            class="main-nav__btn"
+            class="main-nav__btn js-open-menu"
             aria-expanded="false"
             aria-controls="menu-container"
             data-menu-button
@@ -38,10 +38,27 @@
               aria-label="Переключатель мобильного меню"
             >
               <use class="main-nav__icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
-              <use class="main-nav__icon-close" href="./images/icons.svg#icon-close_24px"></use>
             </svg>
           </button>
-          <div class="menu-container" id="menu-container" data-menu>
+          <div class="menu-container js-menu-container" id="menu-container" data-menu>
+            <button
+              class="menu-container__btn js-close-menu"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                class="menu-container__common-icon"
+                width="24"
+                height="16"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="menu-container__icon-close"
+                  href="./images/icons.svg#icon-close_24px"
+                ></use>
+              </svg>
+            </button>
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
@@ -617,7 +634,13 @@
         </div>
       </div>
     </footer>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
