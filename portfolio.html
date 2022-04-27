@@ -24,24 +24,40 @@
           <a href="./index.html" lang="en" class="logo"
             >Web<span class="logo logo--black">Studio</span>
           </a>
-
           <button
-            class="main-nav__btn"
+            class="main-nav__btn js-open-menu"
             aria-expanded="false"
             aria-controls="menu-container"
             data-menu-button
           >
             <svg
               class="main-nav__common-icon"
-              width="40"
-              height="40"
+              width="24"
+              height="16"
               aria-label="Переключатель мобильного меню"
             >
-              <use class="main-nav__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
-              <use class="main-nav__icon-close" href="./images/icons.svg#icon-close_40px"></use>
+              <use class="main-nav__icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
             </svg>
           </button>
-          <div class="menu-container" id="menu-container" data-menu>
+          <div class="menu-container js-menu-container" id="menu-container" data-menu>
+            <button
+              class="menu-container__btn js-close-menu"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                class="menu-container__common-icon"
+                width="24"
+                height="16"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="menu-container__icon-close"
+                  href="./images/icons.svg#icon-close_24px"
+                ></use>
+              </svg>
+            </button>
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a href="./index.html" class="site-nav__link">Студия</a>
@@ -73,6 +89,20 @@
                 >
               </li>
             </ul>
+            <ul class="social-nav">
+              <li class="social-nav__item">
+                <a href="" class="social-nav__link">Instagram</a>
+              </li>
+              <li class="social-nav__item">
+                <a href="" class="social-nav__link">Twitter</a>
+              </li>
+              <li class="social-nav__item">
+                <a href="" class="social-nav__link">Facebook</a>
+              </li>
+              <li class="social-nav__item">
+                <a href="" class="social-nav__link">LinkedIn</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -102,13 +132,18 @@
             <li class="card-set__item">
               <a href="" class="card-set__link">
                 <div class="card-set__thumb">
-                  <img
-                    loading="lazy"
-                    srcset="./images/card-set-1.jpg 1x, ./images/card-set-1@2x.jpg 2x"
-                    src="./images/card-set-1.jpg"
-                    alt="Открытый ноутбук"
-                    class="card-set__img"
-                  />
+                  <picture>
+                    <source srcset="./images/card-set-1-450@2x.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/card-set-1-370@2x.jpg" media="(min-width: $desktop)" />
+                    <source srcset="./images/card-set-1-354@2x.jpg" media="(min-width: $tablet)" />
+                    <img
+                      loading="lazy"
+                      src="./images/card-set-1-354@2x.jpg"
+                      alt="Открытый ноутбук"
+                      class="card-set__img"
+                      size="(min-width: $desktop) 33vw, (min-width: $tablet) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -117,7 +152,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
+                <div class="card-set__meta card-set__meta--biggest">
                   <h2 class="card-set__title">Технокряк</h2>
                   <p class="card-set__text">Веб-сайт</p>
                 </div>
@@ -126,14 +161,18 @@
             <li class="card-set__item">
               <a href="" class="card-set__link">
                 <div class="card-set__thumb">
-                  <img
-                    loading="lazy"
-                    srcset="./images/card-set-2.jpg 1x, ./images/card-set-2@2x.jpg 2x"
-                    src="./images/card-set-2.jpg"
-                    alt="Два баскетболиста во время иры"
-                    class="card-set__img"
-                  />
-
+                  <picture>
+                    <source srcset="./images/card-set-2-450@2x.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/card-set-2-370@2x.jpg" media="(min-width: $desktop)" />
+                    <source srcset="./images/card-set-2-354@2x.jpg" media="(min-width: $tablet)" />
+                    <img
+                      loading="lazy"
+                      src="./images/card-set-2-354@2x.jpg"
+                      alt="Два баскетболиста во время иры"
+                      class="card-set__img"
+                      size="(min-width: $desktop) 33vw, (min-width: $tablet) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-text">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis unde
@@ -153,14 +192,18 @@
             <li class="card-set__item">
               <a href="" class="card-set__link">
                 <div class="card-set__thumb">
-                  <img
-                    loading="lazy"
-                    srcset="./images/card-set-3.jpg 1x, ./images/card-set-3@2x.jpg 2x"
-                    src="./images/card-set-3.jpg"
-                    alt="Вывеска рыбного ресторана"
-                    class="card-set__img"
-                  />
-
+                  <picture>
+                    <source srcset="./images/card-set-3-450@2x.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/card-set-3-370@2x.jpg" media="(min-width: $desktop)" />
+                    <source srcset="./images/card-set-3-354@2x.jpg" media="(min-width: $tablet)" />
+                    <img
+                      loading="lazy"
+                      src="./images/card-set-3-354@2x.jpg"
+                      alt="Вывеска рыбного ресторана"
+                      class="card-set__img"
+                      size="(min-width: $desktop) 33vw, (min-width: $tablet) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente facilis
@@ -179,14 +222,18 @@
             <li class="card-set__item">
               <a href="" class="card-set__link">
                 <div class="card-set__thumb">
-                  <img
-                    loading="lazy"
-                    srcset="./images/card-set-4.jpg 1x, ./images/card-set-4@2x.jpg 2x"
-                    src="./images/card-set-4.jpg"
-                    alt="Наушники"
-                    class="card-set__img"
-                  />
-
+                  <picture>
+                    <source srcset="./images/card-set-4-450@2x.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/card-set-4-370@2x.jpg" media="(min-width: $desktop)" />
+                    <source srcset="./images/card-set-4-354@2x.jpg" media="(min-width: $tablet)" />
+                    <img
+                      loading="lazy"
+                      src="./images/card-set-4-354@2x.jpg"
+                      alt="Наушники"
+                      class="card-set__img"
+                      size="(min-width: $desktop) 33vw, (min-width: $tablet) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius nam
@@ -204,14 +251,18 @@
             <li class="card-set__item">
               <a href="" class="card-set__link">
                 <div class="card-set__thumb">
-                  <img
-                    loading="lazy"
-                    srcset="./images/card-set-5.jpg 1x, ./images/card-set-5@2x.jpg 2x"
-                    src="./images/card-set-5.jpg"
-                    alt="Две декоративные упаковки"
-                    class="card-set__img"
-                  />
-
+                  <picture>
+                    <source srcset="./images/card-set-5-450@2x.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/card-set-5-370@2x.jpg" media="(min-width: $desktop)" />
+                    <source srcset="./images/card-set-5-354@2x.jpg" media="(min-width: $tablet)" />
+                    <img
+                      loading="lazy"
+                      src="./images/card-set-5-354@2x.jpg"
+                      alt="Две декоративные упаковки"
+                      class="card-set__img"
+                      size="(min-width: $desktop) 33vw, (min-width: $tablet) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium,
@@ -229,14 +280,18 @@
             <li class="card-set__item">
               <a href="" class="card-set__link">
                 <div class="card-set__thumb">
-                  <img
-                    loading="lazy"
-                    srcset="./images/card-set-6.jpg 1x, ./images/card-set-6@2x.jpg 2x"
-                    src="./images/card-set-6.jpg"
-                    alt="Монитор компъютера"
-                    class="card-set__img"
-                  />
-
+                  <picture>
+                    <source srcset="./images/card-set-6-450@2x.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/card-set-6-370@2x.jpg" media="(min-width: $desktop)" />
+                    <source srcset="./images/card-set-6-354@2x.jpg" media="(min-width: $tablet)" />
+                    <img
+                      loading="lazy"
+                      src="./images/card-set-6-354@2x.jpg"
+                      alt="Монитор компъютера"
+                      class="card-set__img"
+                      size="(min-width: $desktop) 33vw, (min-width: $tablet) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quis unde,
@@ -254,14 +309,18 @@
             <li class="card-set__item">
               <a href="" class="card-set__link">
                 <div class="card-set__thumb">
-                  <img
-                    loading="lazy"
-                    srcset="./images/card-set-7.jpg 1x, ./images/card-set-7@2x.jpg 2x"
-                    src="./images/card-set-7.jpg"
-                    alt="Раскрытый журнал"
-                    class="card-set__img"
-                  />
-
+                  <picture>
+                    <source srcset="./images/card-set-7-450@2x.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/card-set-7-370@2x.jpg" media="(min-width: $desktop)" />
+                    <source srcset="./images/card-set-7-354@2x.jpg" media="(min-width: $tablet)" />
+                    <img
+                      loading="lazy"
+                      src="./images/card-set-7-354@2x.jpg"
+                      alt="Раскрытый журнал"
+                      class="card-set__img"
+                      size="(min-width: $desktop) 33vw, (min-width: $tablet) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos nobis
@@ -279,14 +338,18 @@
             <li class="card-set__item">
               <a href="" class="card-set__link">
                 <div class="card-set__thumb">
-                  <img
-                    loading="lazy"
-                    srcset="./images/card-set-8.jpg 1x, ./images/card-set-8@2x.jpg 2x"
-                    src="./images/card-set-8.jpg"
-                    alt="Бирка"
-                    class="card-set__img"
-                  />
-
+                  <picture>
+                    <source srcset="./images/card-set-8-450@2x.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/card-set-8-370@2x.jpg" media="(min-width: $desktop)" />
+                    <source srcset="./images/card-set-8-354@2x.jpg" media="(min-width: $tablet)" />
+                    <img
+                      loading="lazy"
+                      src="./images/card-set-8-354@2x.jpg"
+                      alt="Бирка"
+                      class="card-set__img"
+                      size="(min-width: $desktop) 33vw, (min-width: $tablet) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur omnis
@@ -305,14 +368,18 @@
             <li class="card-set__item">
               <a href="" class="card-set__link">
                 <div class="card-set__thumb">
-                  <img
-                    loading="lazy"
-                    srcset="./images/card-set-9.jpg 1x, ./images/card-set-9@2x.jpg 2x"
-                    src="./images/card-set-9.jpg"
-                    alt="Процесс набора текста на клавитатуре ноутбука"
-                    class="card-set__img"
-                  />
-
+                  <picture>
+                    <source srcset="./images/card-set-9-450@2x.jpg" media="(max-width: 767px)" />
+                    <source srcset="./images/card-set-9-370@2x.jpg" media="(min-width: $desktop)" />
+                    <source srcset="./images/card-set-9-354@2x.jpg" media="(min-width: $tablet)" />
+                    <img
+                      loading="lazy"
+                      src="./images/card-set-9-354@2x.jpg"
+                      alt="Процесс набора текста на клавитатуре ноутбука"
+                      class="card-set__img"
+                      size="(min-width: $desktop) 33vw, (min-width: $tablet) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam soluta illum

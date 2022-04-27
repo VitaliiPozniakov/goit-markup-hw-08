@@ -9,6 +9,7 @@
 }
 
 .card-set__item {
+  height: auto;
   &:not(:last-child) {
     margin-bottom: 30px;
     width: 100%;
@@ -29,6 +30,12 @@
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
   border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+.card-set__meta--biggest {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    min-height: 146px;
+  }
 }
 
 .card-set__img {
