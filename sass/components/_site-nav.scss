@@ -1,9 +1,9 @@
 .site-nav {
-  // margin-left: 88px;
+ 
   @extend %list;
 
   @media screen and (min-width: $tablet) {
-    // margin-left: 93px;
+   
     display: flex;
   }
 }
