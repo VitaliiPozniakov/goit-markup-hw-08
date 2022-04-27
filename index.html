@@ -113,77 +113,6 @@
             для вашего бизнеса
           </h1>
           <button data-modal-open type="button" class="button">Заказать услугу</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <form class="form">
-                <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
-                <div role="group" class="form__group">
-                  <div class="form__field">
-                    <label class="form__label" for="name">Имя</label>
-                    <div class="form__thumb">
-                      <input type="text" name="name" id="name" class="form__input" />
-                      <svg class="form__icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-person"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="form__field">
-                    <label class="form__label" for="telephone">Телефон</label>
-                    <div class="form__thumb">
-                      <input type="tel" name="telephone" id="telephone" class="form__input" />
-                      <svg class="form__icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="form__field">
-                    <label class="form__label" for="email-hero">Почта</label>
-                    <div class="form__thumb">
-                      <input type="email" name="email" id="email-hero" class="form__input" />
-                      <svg class="form__icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-email"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="form__field">
-                    <label class="form__label" for="comment">Комментарий</label>
-                    <textarea
-                      name="comment"
-                      id="comment"
-                      placeholder="Введите текст"
-                      class="form__comment"
-                    ></textarea>
-                  </div>
-                </div>
-                <label class="checkbox" for="contracts-conditions">
-                  <input
-                    type="checkbox"
-                    name="contracts conditions"
-                    value="agreement"
-                    id="contracts-conditions"
-                    class="checkbox__input"
-                  />
-                  <span class="checkbox__icon"></span>
-                  <span class="checkbox__text">
-                    Соглашаюсь с рассылкой и принимаю
-                    <a
-                      href=""
-                      target="_blank"
-                      rel="nofollow noopener noreferrer noindex"
-                      class="checkbox__link"
-                      >Условия договора</a
-                    >
-                  </span>
-                </label>
-                <button type="submit" class="button">Отправить</button>
-              </form>
-              <button data-modal-close type="button" class="close">
-                <svg class="close__icon" width="30" height="30">
-                  <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </section>
       <section class="section">
@@ -633,6 +562,77 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="form">
+          <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
+          <div role="group" class="form__group">
+            <div class="form__field">
+              <label class="form__label" for="name">Имя</label>
+              <div class="form__thumb">
+                <input type="text" name="name" id="name" class="form__input" />
+                <svg class="form__icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="telephone">Телефон</label>
+              <div class="form__thumb">
+                <input type="tel" name="telephone" id="telephone" class="form__input" />
+                <svg class="form__icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="email-hero">Почта</label>
+              <div class="form__thumb">
+                <input type="email" name="email" id="email-hero" class="form__input" />
+                <svg class="form__icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="comment">Комментарий</label>
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Введите текст"
+                class="form__comment"
+              ></textarea>
+            </div>
+          </div>
+          <label class="checkbox" for="contracts-conditions">
+            <input
+              type="checkbox"
+              name="contracts conditions"
+              value="agreement"
+              id="contracts-conditions"
+              class="checkbox__input"
+            />
+            <span class="checkbox__icon"></span>
+            <span class="checkbox__text">
+              Соглашаюсь с рассылкой и принимаю
+              <a
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer noindex"
+                class="checkbox__link"
+                >Условия договора</a
+              >
+            </span>
+          </label>
+          <button type="submit" class="button">Отправить</button>
+        </form>
+        <button data-modal-close type="button" class="close">
+          <svg class="close__icon" width="30" height="30">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
