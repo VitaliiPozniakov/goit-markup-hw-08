@@ -32,6 +32,12 @@
   background-color: $secondary-background-color-dark;
   color: $footer-placeholder-color;
 
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+    height: 50px;
+    margin-right: 0px;
+  }
+
   @media screen and (min-width: $desktop) {
     width: 358px;
     height: 50px;

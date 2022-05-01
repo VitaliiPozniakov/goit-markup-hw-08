@@ -1,9 +1,7 @@
 .site-nav {
- 
   @extend %list;
 
   @media screen and (min-width: $tablet) {
-   
     display: flex;
   }
 }

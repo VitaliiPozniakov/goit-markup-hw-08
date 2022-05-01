@@ -7,6 +7,10 @@
     padding-left: 40px;
     padding-right: 25px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -30,6 +34,7 @@
 
   @media screen and (min-width: $desktop) {
     align-items: center;
+    margin-left: 93px;
   }
 }
 

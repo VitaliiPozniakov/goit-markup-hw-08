@@ -1,10 +1,9 @@
 .contacts-nav {
   @extend %list;
 
-
   @media screen and (max-width: 747px) {
     // display: none;
-    margin-top: 306px;
+    // margin-top: 306px;
     margin-bottom: 64px;
   }
 
@@ -34,7 +33,6 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
-  
     text-align: left;
 
     &:not(:last-child) {
