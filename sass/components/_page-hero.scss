@@ -4,7 +4,7 @@
   text-align: center;
   background-color: $background-hero;
   min-height: 400px;
-  max-width: 480px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient($linear-gradient-hero-color, $linear-gradient-hero-color),
@@ -23,7 +23,8 @@
   }
 
   @media screen and (min-width: $mobile) {
-    max-width: 768px;
+    max-width: 1536px;
+
     background-image: linear-gradient($linear-gradient-hero-color, $linear-gradient-hero-color),
       url('../images/hero-tablet.jpg');
     @media screen and (min-device-pixel-ratio: 2),
