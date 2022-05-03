@@ -7,9 +7,9 @@
     padding-left: 40px;
     padding-right: 25px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
 
     position: fixed;
     top: 0;
@@ -55,6 +55,8 @@
   }
 }
 
-// .menu-container__margin-wraper {
-//   display: flex;
-// }
+.menu-container__wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
