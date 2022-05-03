@@ -125,9 +125,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -911,6 +908,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .feature-card__title {
+    text-align: left;
+  }
 }
 
 .feature-card__text {
