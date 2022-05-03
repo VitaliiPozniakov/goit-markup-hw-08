@@ -156,15 +156,16 @@ img {
 }
 
 .menu-container {
+  position: relative;
   background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    padding-top: 10px;
+    padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
-    padding-right: 25px;
+    padding-right: 83px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -214,8 +215,9 @@ img {
 }
 
 .menu-container__btn {
-  display: block;
-  margin-left: auto;
+  position: absolute;
+  top: 21px;
+  right: 25px;
   border: none;
   background-color: transparent;
 }

@@ -1,11 +1,12 @@
 .menu-container {
+  position: relative;
   background-color: $primari-white-color;
 
   @media screen and (max-width: 767px) {
-    padding-top: 10px;
+    padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
-    padding-right: 25px;
+    padding-right: 83px;
 
     display: flex;
     flex-direction: column;
@@ -39,8 +40,11 @@
 }
 
 .menu-container__btn {
-  display: block;
-  margin-left: auto;
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  // display: block;
+  // margin-left: auto;
 
   border: none;
   background-color: transparent;
