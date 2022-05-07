@@ -1,4 +1,6 @@
 .products {
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 .container {
 }
@@ -46,6 +48,7 @@
 
 .products-cards__item-first {
   background: #ffb8ca;
+  margin-top: 150px;
 
   &::before {
     position: absolute;
@@ -102,7 +105,9 @@
 }
 
 .products-cards__title {
-  //   position: relative;
+  //   max-width: 174px;
+  //   height: 23px;
+
   font-family: 'Titan One', sans-serif;
   font-size: 30px;
   line-height: 1.13;

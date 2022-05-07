@@ -890,6 +890,11 @@ img {
   color: #2196f3;
 }
 
+.products {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
 .products__title {
   font-family: 'Titan One', sans-serif;
   font-size: 34px;
@@ -941,6 +946,7 @@ img {
 
 .products-cards__item-first {
   background: #ffb8ca;
+  margin-top: 150px;
 }
 
 .products-cards__item-first::before {
