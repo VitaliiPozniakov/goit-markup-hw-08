@@ -1,0 +1,64 @@
+.products {
+}
+.container {
+}
+.products__title {
+  font-family: 'Titan One', sans-serif;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d41443;
+}
+.products__lable {
+  font-family: 'Titan One', sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffa5ba;
+}
+.products-cards {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.products-cards__item {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 280px;
+  min-height: 629px;
+
+  text-align: center;
+}
+
+.products-cards__wrap {
+  position: absolute;
+  bottom: 0;
+  max-width: 280px;
+  min-height: 489px;
+  background: #ffb8ca;
+  border-radius: 24px;
+}
+
+.products-cards__title {
+  font-family: 'Titan One', sans-serif;
+  font-size: 30px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.products-cards__text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.products-cards__btn {
+}
