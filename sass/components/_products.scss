@@ -56,26 +56,41 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 3 * 16px) / 3);
     margin: 8px;
+    margin-top: 154px;
+
+    max-width: 224px;
+    min-height: 473px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;
   }
 }
 
 .products-cards__item-first {
   background: #ffb8ca;
 
-  //   &::before {
-  //     position: absolute;
-  //     bottom: 349px;
-  //     left: 0;
-  //     content: '';
-  //     display: block;
-  //     width: 280px;
-  //     height: 280px;
+  &::before {
+    position: absolute;
+    bottom: 349px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
 
-  //     background-image: url(../images/ice-cream.png);
-  //     background-size: cover;
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //   }
+    background-image: url(../images/ice-cream.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 768px) {
+    &::before {
+      bottom: 387px;
+      width: 224px;
+      height: 224px;
+    }
+  }
 
   @media screen and (max-width: 767px) {
     margin-top: 150px;
@@ -85,39 +100,54 @@
 .products-cards__item-second {
   background: #f0d1a5;
 
-  //   &::before {
-  //     position: absolute;
-  //     bottom: 349px;
-  //     left: 0;
-  //     content: '';
-  //     display: block;
-  //     width: 280px;
-  //     height: 280px;
+  &::before {
+    position: absolute;
+    bottom: 349px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
 
-  //     background-image: url(../images/ice-coffee.png);
-  //     background-size: cover;
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //   }
+    background-image: url(../images/ice-coffee.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 768px) {
+    &::before {
+      bottom: 387px;
+      width: 224px;
+      height: 224px;
+    }
+  }
 }
 
 .products-cards__item-third {
   background: #c2e297;
 
-  //   &::before {
-  //     position: absolute;
-  //     bottom: 349px;
-  //     left: 0;
-  //     content: '';
-  //     display: block;
-  //     width: 280px;
-  //     height: 280px;
+  &::before {
+    position: absolute;
+    bottom: 349px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
 
-  //     background-image: url(../images/milcshakes.png);
-  //     background-size: cover;
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //   }
+    background-image: url(../images/milcshakes.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: 768px) {
+    &::before {
+      bottom: 387px;
+      width: 224px;
+      height: 224px;
+    }
+  }
 }
 
 .products-cards__title {
@@ -140,6 +170,11 @@
 
     background-image: url(../images/product-circles.svg);
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 .products-cards__text {
   max-width: 200px;
@@ -152,6 +187,14 @@
   line-height: 1.75;
   letter-spacing: 0.04em;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    max-width: 160px;
+    height: 150px;
+
+    font-size: 14px;
+    line-height: 1.79;
+  }
 }
 .products-cards__btn {
   width: 40px;
